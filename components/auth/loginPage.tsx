@@ -14,6 +14,7 @@ import {
 } from "@/components/ui/field";
 import { Input } from "../ui/input";
 import { Button } from "../ui/button";
+import Link from "next/link";
 
 export default function LoginPage() {
   return (
@@ -23,8 +24,8 @@ export default function LoginPage() {
           <FieldLegend className="font-bold  text-xl! text-center">
             Welcome Back
           </FieldLegend>
-          <FieldDescription>
-            Sign in to access your dashboard and settings
+          <FieldDescription className="text-center">
+            Don't have an account yet? <Link href={'/auth/signup'}>Sign up</Link>
           </FieldDescription>
         </FieldSet>
 
